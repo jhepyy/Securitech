@@ -126,11 +126,16 @@
             width: 100%;
             height: 100%;
             overflow: auto;
+<<<<<<< HEAD
+=======
+            background-color: rgb(0, 0, 0);
+>>>>>>> b9644395677148fc936ebf4b5a476cb5c60f3ccd
             background-color: rgba(0, 0, 0, 0.4);
         }
 
         .modal-content {
             background-color: #fefefe;
+<<<<<<< HEAD
             margin: 100px auto;
             padding: 20px;
             border: 1px solid #888;
@@ -225,6 +230,27 @@
 
         .modal-button:hover {
             opacity: 0.7;
+=======
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+>>>>>>> b9644395677148fc936ebf4b5a476cb5c60f3ccd
         }
     </style>
     <?= $this->include('head') ?>
@@ -328,6 +354,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Add New Equipment Modal -->
     <div class="modal" id="newItemModal">
         <div class="modal-content">
@@ -353,6 +380,21 @@
                     <button type="submit" class="modal-button add">Add</button>
                 </div>
 
+=======
+    <!-- Modal HTML -->
+    <div id="newItemModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Item</h2>
+            <form id="newItemForm">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="itemName" required><br><br>
+                <label for="itemSerial">Serial Number:</label>
+                <input type="text" id="itemSerial" name="itemSerial" required><br><br>
+                <label for="itemQuantity">Quantity:</label>
+                <input type="number" id="itemQuantity" name="itemQuantity" required><br><br>
+                <button type="submit">Add Item</button>
+>>>>>>> b9644395677148fc936ebf4b5a476cb5c60f3ccd
             </form>
         </div>
     </div>
@@ -396,6 +438,7 @@
             document.getElementById(quantityId).textContent = quantities[brand] || '';
         }
 
+<<<<<<< HEAD
         // Modal functionality
         document.getElementById('newItemButton').addEventListener('click', function() {
             document.getElementById('newItemModal').style.display = 'block';
@@ -432,6 +475,41 @@
         }
 
         // Search modal
+=======
+        // Get the modal
+        var modal = document.getElementById("newItemModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("newItemButton");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Optional: Handle form submission
+        document.getElementById("newItemForm").onsubmit = function(event) {
+            event.preventDefault();
+            // Add logic to handle form data
+            alert("New item added!");
+            modal.style.display = "none";
+        }
+>>>>>>> b9644395677148fc936ebf4b5a476cb5c60f3ccd
         $('#example').ready(function() {
             $('#example').DataTable({
                 // scrollX: true,
