@@ -126,16 +126,12 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-<<<<<<< HEAD
-=======
             background-color: rgb(0, 0, 0);
->>>>>>> b9644395677148fc936ebf4b5a476cb5c60f3ccd
             background-color: rgba(0, 0, 0, 0.4);
         }
 
         .modal-content {
             background-color: #fefefe;
-<<<<<<< HEAD
             margin: 100px auto;
             padding: 20px;
             border: 1px solid #888;
@@ -230,7 +226,6 @@
 
         .modal-button:hover {
             opacity: 0.7;
-=======
             margin: 15% auto;
             padding: 20px;
             border: 1px solid #888;
@@ -250,8 +245,8 @@
             color: black;
             text-decoration: none;
             cursor: pointer;
->>>>>>> b9644395677148fc936ebf4b5a476cb5c60f3ccd
         }
+        
     </style>
     <?= $this->include('head') ?>
 </head>
@@ -354,7 +349,7 @@
         </div>
     </div>
 
-<<<<<<< HEAD
+
     <!-- Add New Equipment Modal -->
     <div class="modal" id="newItemModal">
         <div class="modal-content">
@@ -380,7 +375,7 @@
                     <button type="submit" class="modal-button add">Add</button>
                 </div>
 
-=======
+
     <!-- Modal HTML -->
     <div id="newItemModal" class="modal">
         <div class="modal-content">
@@ -394,7 +389,6 @@
                 <label for="itemQuantity">Quantity:</label>
                 <input type="number" id="itemQuantity" name="itemQuantity" required><br><br>
                 <button type="submit">Add Item</button>
->>>>>>> b9644395677148fc936ebf4b5a476cb5c60f3ccd
             </form>
         </div>
     </div>
@@ -438,7 +432,6 @@
             document.getElementById(quantityId).textContent = quantities[brand] || '';
         }
 
-<<<<<<< HEAD
         // Modal functionality
         document.getElementById('newItemButton').addEventListener('click', function() {
             document.getElementById('newItemModal').style.display = 'block';
@@ -475,7 +468,7 @@
         }
 
         // Search modal
-=======
+
         // Get the modal
         var modal = document.getElementById("newItemModal");
 
@@ -509,7 +502,7 @@
             alert("New item added!");
             modal.style.display = "none";
         }
->>>>>>> b9644395677148fc936ebf4b5a476cb5c60f3ccd
+
         $('#example').ready(function() {
             $('#example').DataTable({
                 // scrollX: true,
