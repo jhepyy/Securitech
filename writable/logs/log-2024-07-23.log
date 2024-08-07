@@ -1,0 +1,18 @@
+CRITICAL - 2024-07-23 07:30:37 --> ErrorException: Cannot redeclare App\Controllers\SecuritechController::reports()
+[Method: GET, Route: user_attendance]
+in APPPATH\Controllers\SecuritechController.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-23 10:11:51 --> ErrorException: Undefined variable $total_students
+[Method: GET, Route: user_reports]
+in APPPATH\Views\user\user_reports.php on line 74.
+ 1 APPPATH\Views\user\user_reports.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_students', 'C:\\xampp\\htdocs\\Securitechs\\app\\Views\\user\\user_reports.php', 74)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Securitechs\\app\\Views\\user\\user_reports.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/user_reports', [], true)
+ 5 APPPATH\Controllers\SecuritechController.php(197): view('user/user_reports')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->reports_user()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

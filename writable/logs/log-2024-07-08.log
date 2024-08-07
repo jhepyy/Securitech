@@ -1,0 +1,129 @@
+CRITICAL - 2024-07-08 15:42:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "common/header.php"
+[Method: GET, Route: admin_Students]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/header.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('common/header', [], true)
+ 3 APPPATH\Controllers\SecuritechController.php(23): view('common/header')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:45:51 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin_Students]
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 4 APPPATH\Controllers\SecuritechController.php(23): view('admin/admin_Students')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:45:51 --> [Caused by] ErrorException: Undefined variable $user_students
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 APPPATH\Views\admin\admin_Students.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_students', 'C:\\xampp\\htdocs\\Securitech\\app\\Views\\admin\\admin_Students.php', 63)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Securitech\\app\\Views\\admin\\admin_Students.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 5 APPPATH\Controllers\SecuritechController.php(23): view('admin/admin_Students')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:47:18 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin_Students]
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 4 APPPATH\Controllers\SecuritechController.php(23): view('admin/admin_Students')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:47:18 --> [Caused by] ErrorException: Undefined variable $user_students
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 APPPATH\Views\admin\admin_Students.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_students', 'C:\\xampp\\htdocs\\Securitech\\app\\Views\\admin\\admin_Students.php', 63)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Securitech\\app\\Views\\admin\\admin_Students.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 5 APPPATH\Controllers\SecuritechController.php(23): view('admin/admin_Students')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:47:34 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: admin_Students]
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 4 APPPATH\Controllers\SecuritechController.php(23): view('admin/admin_Students')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:47:34 --> [Caused by] ErrorException: Undefined variable $user_students
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 APPPATH\Views\admin\admin_Students.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_students', 'C:\\xampp\\htdocs\\Securitech\\app\\Views\\admin\\admin_Students.php', 63)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Securitech\\app\\Views\\admin\\admin_Students.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 5 APPPATH\Controllers\SecuritechController.php(23): view('admin/admin_Students')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:49:36 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, App\Models\SecuritechModel given
+[Method: GET, Route: admin_Students]
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 4 APPPATH\Controllers\SecuritechController.php(27): view('admin/admin_Students', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:49:45 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, App\Models\SecuritechModel given
+[Method: GET, Route: admin_Students]
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 4 APPPATH\Controllers\SecuritechController.php(27): view('admin/admin_Students', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-08 15:51:49 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, App\Models\SecuritechModel given
+[Method: GET, Route: admin_Students]
+in APPPATH\Views\admin\admin_Students.php on line 63.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/admin_Students', [], true)
+ 4 APPPATH\Controllers\SecuritechController.php(36): view('admin/admin_Students', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SecuritechController->student()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SecuritechController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
